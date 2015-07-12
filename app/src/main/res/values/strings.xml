@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Love Life Calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tell_about_you">Tell about you&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="tell_about_partner">Tell about partner&#160;&#160;</string>
+    <string name="shake_to_go">Shake To Go</string>
+    <string name="title_activity_result">Result</string>
+    <string name="website_address">http://goo.gl/SncDYi</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1451143021893435/3211341195</string>
+
+
+</resources>

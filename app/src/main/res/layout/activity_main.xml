@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bgmain"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <View
+        android:id="@+id/statusBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignBottom="@+id/statusBarBackground"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tell about you"
+        android:id="@+id/tellaboutyou"
+        android:textSize="20sp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:id="@+id/yourName"
+        android:hint="Your Name"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/tellaboutyou"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/yourNumber"
+        android:hint="Your Phone Number"
+        android:layout_below="@+id/yourName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/callbutton"
+        android:id="@+id/contactButton1"
+        android:layout_alignTop="@+id/tellaboutyou"
+        android:layout_toRightOf="@+id/tellaboutpartner"
+        android:layout_toEndOf="@+id/tellaboutpartner" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tell_about_partner"
+        android:id="@+id/tellaboutpartner"
+        android:textSize="20sp"
+        android:layout_below="@+id/yourNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/callbutton"
+        android:id="@+id/contactButton2"
+        android:layout_alignTop="@+id/tellaboutpartner"
+        android:layout_toRightOf="@+id/tellaboutpartner"
+        android:layout_toEndOf="@+id/tellaboutpartner" />
+
+    <EditText
+
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="Partner's Name"
+        android:id="@+id/partnerName"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/tellaboutpartner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:inputType="phone"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="Partner's Number"
+
+        android:ems="10"
+        android:id="@+id/partnerNumber"
+        android:layout_below="@+id/partnerName"
+        android:layout_alignLeft="@+id/partnerName"
+        android:layout_alignStart="@+id/partnerName"
+
+        android:layout_alignRight="@+id/partnerName"
+        android:layout_alignEnd="@+id/partnerName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/shake_to_go"
+        android:id="@+id/shakeText"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:textSize="25sp"
+        android:layout_below="@+id/partnerNumber"
+        android:layout_alignRight="@+id/tellaboutyou"
+        android:layout_alignEnd="@+id/tellaboutyou"
+        android:layout_marginTop="21dp" />
+
+</RelativeLayout>
